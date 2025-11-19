@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💪 AI Fitness Coach
 
-## Getting Started
+AI-powered fitness coach that generates personalized workout plans, custom diet recommendations, and daily motivational quotes based on your goals, fitness level, and preferences. Built with Next.js and Claude AI.
 
-First, run the development server:
+## ✨ Features
 
+- **Personalized Workout Plans** - Custom exercise routines tailored to your fitness level, goals, and workout location (home, gym, or outdoor)
+- **Custom Diet Recommendations** - Nutrition plans based on your dietary preferences (veg, non-veg, vegan, keto) and fitness goals
+- **Daily Motivation Quotes** - AI-generated motivational quotes to keep you inspired
+- **Comprehensive User Profiling** - Considers age, gender, height, weight, stress levels, and medical history
+- **Goal-Oriented Plans** - Supports multiple fitness goals: weight loss, muscle gain, endurance, and flexibility
+- **Adaptive Recommendations** - Plans adjust based on your fitness level: beginner, intermediate, or advanced
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or 
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/vigneshgbe/ai-fitness-coach.git
+cd ai-fitness-coach
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables
+```bash
+cp .env.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add your API keys to `.env.local`:
+```env
+ANTHROPIC_API_KEY=your_api_key_here
+```
 
-## Learn More
+4. Run the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 14+ (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **AI**: Claude API (Anthropic)
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+ai-fitness-coach/
+├── app/
+│   ├── page.tsx          # Home/Form page
+│   ├── plan/             # Generated plan page
+│   └── layout.tsx        # Root layout
+├── components/
+│   ├── ui/               # shadcn/ui components
+│   ├── UserForm.tsx      # Main form component
+│   └── Footer.tsx        # Footer component
+├── public/               # Static assets
+└── styles/              # Global styles
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Usage
+
+1. **Fill Out Your Profile**
+   - Enter personal information (name, age, gender)
+   - Add physical metrics (height, weight)
+   - Select fitness goals and current level
+   - Choose workout location preference
+   - Specify dietary preferences
+   - Optionally add stress level and medical history
+
+2. **Generate Your Plan**
+   - Click "Generate My Plan 💪"
+   - AI processes your information
+   - Receive personalized workout and diet plan
+
+3. **Follow Your Plan**
+   - Review your custom workout routine
+   - Follow the nutrition recommendations
+   - Get motivated with daily quotes
+
+## 🎯 Fitness Goals Supported
+
+- **Weight Loss** - Cardio-focused workouts with calorie deficit nutrition
+- **Muscle Gain** - Strength training with high-protein diet plans
+- **Endurance** - Stamina-building exercises with balanced nutrition
+- **Flexibility** - Stretching and mobility workouts with recovery-focused diet
+
+## 🍽️ Dietary Preferences
+
+- Vegetarian
+- Non-Vegetarian
+- Vegan
+- Keto
+
+## 🏋️ Workout Locations
+
+- Home (bodyweight and minimal equipment)
+- Gym (full equipment access)
+- Outdoor (running, parks, outdoor activities)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Vignesh G**
+
+- Portfolio: [vigneshgbe.neocities.org](https://vigneshgbe.neocities.org/)
+- LinkedIn: [@vigneshgbe](https://www.linkedin.com/in/vigneshgbe)
+- GitHub: [@vigneshgbe](https://github.com/vigneshgbe)
+
+## ⚠️ Disclaimer
+
+This AI fitness coach provides general fitness and nutrition recommendations. Always consult with healthcare professionals before starting any new fitness or diet program, especially if you have existing medical conditions.
+
+---
+
+Made with ❤️ for fitness enthusiasts
