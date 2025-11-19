@@ -36,7 +36,7 @@ export default function ImageGenerator({ prompt }: ImageGeneratorProps) {
   return (
     <div className="mt-2 flex flex-col items-center gap-2">
       <Button onClick={generateImage} disabled={loading}>
-        {loading ? "Generating..." : "🖼️ Generate Image"}
+        {loading ? "Generating..." : "Generate Example Image"}
       </Button>
 
       {image && (
