@@ -38,11 +38,6 @@ yarn install
 cp .env.example .env.local
 ```
 
-Add your API keys to `.env.local`:
-```env
-ANTHROPIC_API_KEY=your_api_key_here
-```
-
 4. Run the development server
 ```bash
 npm run dev
